@@ -45,7 +45,6 @@ export const getStudentReport = (studentName) => async (dispatch) => {
         throw response.status
     }
     catch (error) {
-        console.log('aaa')
         return dispatch({type: GET_STUDENT_ERROR})
     }
 }

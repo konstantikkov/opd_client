@@ -34,7 +34,7 @@ export default (state = defaultState, action) => {
                 ...state,
                 student: {
                     meta: action.meta,
-                    error: true
+                    error: false
                 }
             }
         case types.GET_STUDENT_REPORT:
@@ -42,7 +42,7 @@ export default (state = defaultState, action) => {
                 ...state,
                 lection: {
                     meta: action.meta,
-                    error: true
+                    error: false
                 }
             }
         default:
