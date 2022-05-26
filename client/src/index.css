@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat_Light.ttf);
+}
+body {
+  margin: 0;
+  font-family: Montserrat
+}
+
+h2 {
+  margin: 0;
+}
