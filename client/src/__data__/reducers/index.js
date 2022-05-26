@@ -37,7 +37,7 @@ export default (state = defaultState, action) => {
                     error: false
                 }
             }
-        case types.GET_STUDENT_REPORT:
+        case types.GET_LECTION_REPORT:
             return {
                 ...state,
                 lection: {

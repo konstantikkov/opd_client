@@ -15,6 +15,7 @@ export const getLectionReport = (lectionName) => async (dispatch) => {
                 reportTypeStr: 'JSON'
             }
         })
+        console.log(response.data)
         if (response.status === 200) {
             return dispatch({
                 type: GET_LECTION_REPORT,
