@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.33749543.css",
-    "main.js": "/static/js/main.437f586d.js",
+    "main.js": "/static/js/main.9a8087e8.js",
     "static/media/saiorse_question.svg": "/static/media/saiorse_question.52367743ee39aa83eb51e7d304849a74.svg",
     "static/media/saiorse_point_left.svg": "/static/media/saiorse_point_left.0a41148916476b02f652d06a8a70af93.svg",
     "static/media/Montserrat_Light.ttf": "/static/media/Montserrat_Light.087334ca601e288c996e.ttf",
     "index.html": "/index.html",
     "main.33749543.css.map": "/static/css/main.33749543.css.map",
-    "main.437f586d.js.map": "/static/js/main.437f586d.js.map"
+    "main.9a8087e8.js.map": "/static/js/main.9a8087e8.js.map"
   },
   "entrypoints": [
     "static/css/main.33749543.css",
-    "static/js/main.437f586d.js"
+    "static/js/main.9a8087e8.js"
   ]
 }

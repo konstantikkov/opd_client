@@ -13,13 +13,17 @@ const setLevel = (mark) => {
             return 'rgba(55,237,176,0.5)'
         case '5':
             return 'rgba(52,227,119,0.5)'
+        case 'H':
+            return '#ffb0b0'
+        default:
+            return '#ffb0b0'
     }
 }
 
 const Student = ({ data }) => {
     return(<DataWrapperStyled>
         <h2>{data.studentName}</h2>
-        <h3>Оценки</h3>
+        <h3>Успеваемость</h3>
         {
             data.courseMarksPairs.map((course) => {
                 return(<DataStyled>
@@ -38,6 +42,26 @@ const Student = ({ data }) => {
                 </DataStyled>)
             })
         }
+    </DataWrapperStyled>)
+}
+
+const Lection = ({ data }) => {
+    return(<DataWrapperStyled>
+        <h2>{data.lectionName}</h2>
+        <h3>Успеваемость</h3>
+        <DataStyled>
+            {
+                data.lectionMarkPairs.map((mark) => {
+                    const level = setLevel(mark.second)
+                    return(
+                        <DataRowStyled>
+                            <DataHeadStyled>{mark.first}</DataHeadStyled>
+                            <DataTailStyled level={level}>{mark.second}</DataTailStyled>
+                        </DataRowStyled>
+                    )
+                })
+            }
+        </DataStyled>
     </DataWrapperStyled>)
 }
 
@@ -66,7 +90,7 @@ export const InfoWrapper = ({title, data, error}) => {
                     title === 'Студент' ?
                         <Student data={data.meta}/>
                         :
-                        ''
+                        <Lection data={data.meta}/>
                 }
                 {
                     side && <img src={Assets.saiorsePointRight}/>
